@@ -1,4 +1,4 @@
-# FMList Analyzer for FM-DX Webserver
+# My Logs plugin for FM-DX Webserver
 
 <img width="1899" height="909" alt="Skjermbilde fra 2026-03-24 01-51-50" src="https://github.com/user-attachments/assets/e44a239c-040d-482e-9c57-9abc80653abb" />
 
@@ -39,7 +39,7 @@ To populate the analyzer with your own catches, you need to export your logs fro
 1. Log in to [fmlist.org](https://www.fmlist.org) and navigate to **Logbook**.
 2. Click on **Select date** and choose either **ALL** or a specific year.
 3. Click the **Export (CSV)** button to download your logbook.
-4. Place the downloaded `.csv` file into the `web/FMList_Data/` folder on your server.
+4. Place the downloaded `.csv` file into the `web/MyLogs_Data/` folder on your server.
 
 > **Tip:** You can add multiple CSV files (for example, one for each year). If multiple files contain overlapping data, the plugin will automatically merge them and ensure no duplicate entries are shown.
 
@@ -49,8 +49,8 @@ To populate the analyzer with your own catches, you need to export your logs fro
 
 If you have a video or audio recording of a specific catch, you can easily link it to your logbook:
 
-1. Place your media file inside the `web/FMList_Data/Media/` folder.
-2. Open the FMList Analyzer in your browser and find the specific log entry in the table.
+1. Place your media file inside the `web/MyLogs_Data/Media/` folder.
+2. Open the **My Logs** page in your browser and find the specific log entry in the table.
 3. Click the **ID** badge next to the propagation mode to copy the unique **Log ID** to your clipboard.
 4. Rename your media file to match this exact Log ID. 
    * *Example: If the Log ID is `20250604-0857-9470`, rename your video to `20250604-0857-9470.mp4`.*
@@ -60,4 +60,4 @@ If you have a video or audio recording of a specific catch, you can easily link 
 
 ## 🔗 Live Example
 Check out an example of a shared media file with active filters applied:  
-👉 [View Live DX Catch Example](https://odx-1.fmdx.no/FMList?year=2026%2C2025%2C2024%2C2023&propa=AuEs%2CEs&sort=days&tbSort=9%2Cdesc&playMedia=20250604-0859-9050)
+👉[View Live DX Catch Example](https://odx-1.fmdx.no/MyLogs?year=2026%2C2025%2C2024%2C2023&propa=AuEs%2CEs&sort=days&tbSort=9%2Cdesc&playMedia=20250604-0859-9050)
